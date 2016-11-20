@@ -12,7 +12,24 @@
         var word2 = 'hello';
         var result1 = checkPalindrom(word1);
         var result2 = checkPalindrom(word2);
-        console.log('result1='+result1+'  result2='+result2);
+//        console.log('result1='+result1+'  result2='+result2);
+    //Q2.去掉一组整形数字重复的值
+     function unique(arr){
+            let hashTable = {};
+            let data = [];
+            for(let i=0;i<arr.length;i++){
+
+                if(!hashTable[arr[i]]){
+                    hashTable[arr[i]] = true;
+                    data.push(arr[i]);
+                }
+            }
+            return data;
+        }
+
+        let array = [1,13,24,11,11,14,1,2];
+        var arr = unique(array);
+        console.log(arr);
 
     </script>
 </head>
