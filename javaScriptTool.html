@@ -3,6 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>1120</title>
+    <script type="text/javascript">
+    //Q1.判断一个单词是否又回文
+        function checkPalindrom(str){
+            return str == str.split('').reverse().join('');
+        }
+        var word1 = 'mamam';
+        var word2 = 'hello';
+        var result1 = checkPalindrom(word1);
+        var result2 = checkPalindrom(word2);
+        console.log('result1='+result1+'  result2='+result2);
+
+    </script>
 </head>
 <body>
 
